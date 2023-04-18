@@ -7,17 +7,37 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = (props) => {
 	console.log(props)
 	return (
-		<div className="text-center bg-dark">
-				<button class="btn btn-secondary btn-lg">reloj</button>
-				<button class="btn btn-secondary btn-lg">{props.mindecs}</button>
-				<button class="btn btn-secondary btn-lg">{props.minunits}</button>
-				<button class="btn btn-secondary btn-lg">:</button>
-				<button class="btn btn-secondary btn-lg">{props.sectens}</button>
-				<button class="btn btn-secondary btn-lg">{props.secunits}</button>
-				<button class="btn btn-secondary btn-lg">:</button>
-				<button class="btn btn-secondary btn-lg">{props.milisectens}</button>
-				<button class="btn btn-secondary btn-lg">{props.milisecunits}</button>
-		</div>
+		<div>
+
+			<div class="container text-center">
+				<div class="row">
+					<div class="col bg-dark rounded text-light fs-1">
+					{props.mindecs}
+					</div>
+					<div class="col bg-dark rounded text-light fs-1">
+					{props.minunits}
+					</div>
+					<div class="col bg-dark rounded text-light fs-1">
+					:
+					</div>
+					<div class="col bg-dark rounded text-light fs-1">
+					{props.sectens}
+					</div>
+					<div class="col bg-dark rounded text-light fs-1">
+					{props.secunits}
+					</div>
+					<div class="col bg-dark rounded text-light fs-1">
+					:
+					</div>
+					<div class="col bg-dark rounded text-light fs-1">
+					{props.milisectens}
+					</div>
+					<div class="col bg-dark rounded text-light fs-1">
+					{props.milisecunits}
+					</div>
+				</div>
+			</div>
+	  </div>
 	);
 };
 

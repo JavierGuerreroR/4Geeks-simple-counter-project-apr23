@@ -16,6 +16,13 @@ let sectens = 0;
 let minunits = 0;
 let mindecs = 0;
 
+// let cdmilisecunits = 10;
+// let cdmilisectens = 10;
+// let cdsecunits = 9;
+// let cdsectens = 5;
+// let cdminunits = 9;
+// let cdmindecs = 5;
+
 //simple counter function
 
 setInterval(function (){
@@ -50,6 +57,33 @@ setInterval(function (){
     }
     console.log(milisecunits,milisectens)
     ReactDOM.render(<Home milisecunits={milisecunits} milisectens={milisectens} secunits={secunits} sectens={sectens} minunits={minunits} mindecs={mindecs}/>, document.querySelector("#app"));
+}, 10)
+
+setInterval(function (){
+    cdmilisecunits--;
+    if(cdmilisecunits === 0){
+        cdmilisecunits=10;
+        cdmilisectens--;
+    } 
+    if(cdmilisectens === 0){
+        cdmilisectens=10;
+        cdsecunits--;
+    }
+    if(cdsecunits === 9){
+        cdsecunits=0;
+        cdsectens--;
+    }
+    if(cdsectens === 6){
+        cdsectens=0;
+        cdminunits--;
+    }
+    if(cdminunits === 9){
+        cdminunits=0;
+        cdmindecs--;
+    }
+
+    console.log(milisecunits,milisectens)
+    ReactDOM.render(<Home cdmilisecunits={cdmilisecunits} cdmilisectens={cdmilisectens} cdsecunits={cdsecunits} cdsectens={cdsectens} cdminunits={cdminunits} cdmindecs={cdmindecs}/>, document.querySelector("#app"));
 }, 10)
 
 
