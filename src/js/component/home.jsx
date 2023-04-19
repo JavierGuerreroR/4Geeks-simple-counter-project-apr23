@@ -11,28 +11,31 @@ const Home = (props) => {
 
 			<div class="container text-center">
 				<div class="row">
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded fs-1">
+					<i class="bi bi-clock"></i>
+					</div>
+					<div class="col bg-dark rounded text-light display-1">
 					{props.mindecs}
 					</div>
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded text-light display-1">
 					{props.minunits}
 					</div>
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded text-light display-1">
 					:
 					</div>
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded text-light display-1">
 					{props.sectens}
 					</div>
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded text-light display-1">
 					{props.secunits}
 					</div>
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded text-light display-1">
 					:
 					</div>
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded text-light display-1">
 					{props.milisectens}
 					</div>
-					<div class="col bg-dark rounded text-light fs-1">
+					<div class="col bg-dark rounded text-light display-1">
 					{props.milisecunits}
 					</div>
 				</div>

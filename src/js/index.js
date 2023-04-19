@@ -59,32 +59,33 @@ setInterval(function (){
     ReactDOM.render(<Home milisecunits={milisecunits} milisectens={milisectens} secunits={secunits} sectens={sectens} minunits={minunits} mindecs={mindecs}/>, document.querySelector("#app"));
 }, 10)
 
-setInterval(function (){
-    cdmilisecunits--;
-    if(cdmilisecunits === 0){
-        cdmilisecunits=10;
-        cdmilisectens--;
-    } 
-    if(cdmilisectens === 0){
-        cdmilisectens=10;
-        cdsecunits--;
-    }
-    if(cdsecunits === 9){
-        cdsecunits=0;
-        cdsectens--;
-    }
-    if(cdsectens === 6){
-        cdsectens=0;
-        cdminunits--;
-    }
-    if(cdminunits === 9){
-        cdminunits=0;
-        cdmindecs--;
-    }
+// Future countdown
+// setInterval(function (){
+//     cdmilisecunits--;
+//     if(cdmilisecunits === 0){
+//         cdmilisecunits=10;
+//         cdmilisectens--;
+//     } 
+//     if(cdmilisectens === 0){
+//         cdmilisectens=10;
+//         cdsecunits--;
+//     }
+//     if(cdsecunits === 9){
+//         cdsecunits=0;
+//         cdsectens--;
+//     }
+//     if(cdsectens === 6){
+//         cdsectens=0;
+//         cdminunits--;
+//     }
+//     if(cdminunits === 9){
+//         cdminunits=0;
+//         cdmindecs--;
+//     }
 
-    console.log(milisecunits,milisectens)
-    ReactDOM.render(<Home cdmilisecunits={cdmilisecunits} cdmilisectens={cdmilisectens} cdsecunits={cdsecunits} cdsectens={cdsectens} cdminunits={cdminunits} cdmindecs={cdmindecs}/>, document.querySelector("#app"));
-}, 10)
+//     console.log(milisecunits,milisectens)
+//     ReactDOM.render(<Home cdmilisecunits={cdmilisecunits} cdmilisectens={cdmilisectens} cdsecunits={cdsecunits} cdsectens={cdsectens} cdminunits={cdminunits} cdmindecs={cdmindecs}/>, document.querySelector("#app"));
+// }, 10)
 
 
 //render your react application
