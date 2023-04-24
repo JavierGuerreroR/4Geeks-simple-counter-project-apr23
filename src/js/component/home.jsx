@@ -9,33 +9,33 @@ const Home = (props) => {
 	return (
 		<div>
 
-			<div class="container text-center">
-				<div class="row">
-					<div class="col bg-dark rounded text-light display-1">
-					<i class="fa-sharp fa-regular fa-clock"></i>
+			<div className="container text-center">
+				<div className="row">
+					<div className="col bg-dark rounded text-light display-1">
+					<i className="fa-sharp fa-regular fa-clock"></i>
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					{props.mindecs}
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					{props.minunits}
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					:
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					{props.sectens}
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					{props.secunits}
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					:
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					{props.milisectens}
 					</div>
-					<div class="col bg-dark rounded text-light display-1">
+					<div className="col bg-dark rounded text-light display-1">
 					{props.milisecunits}
 					</div>
 				</div>
