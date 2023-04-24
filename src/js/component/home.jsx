@@ -11,8 +11,8 @@ const Home = (props) => {
 
 			<div class="container text-center">
 				<div class="row">
-					<div class="col bg-dark rounded fs-1">
-					<i class="bi bi-clock"></i>
+					<div class="col bg-dark rounded text-light display-1">
+					<i class="fa-sharp fa-regular fa-clock"></i>
 					</div>
 					<div class="col bg-dark rounded text-light display-1">
 					{props.mindecs}
